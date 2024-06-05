@@ -1,0 +1,133 @@
+.main-box{
+    border: 1px solid black;
+    height: 180%;
+    width: 100%;
+    background-color: aqua;
+    
+}
+.box{
+    border: 1px solid black;
+    height: 94%;
+    width: 95%;
+    background-color: white;
+    margin-top:1.5%;
+    margin-left:1.5%;
+    padding: 1%; 
+}
+#roll{
+    margin-top: 10px;
+    border: none;
+}
+#number{
+    float: right;
+     border: none;
+}
+#board{
+    text-align: center;
+    margin-top: -3%;
+    margin-left: 15%;
+    color: lightblue;
+}
+.mid-circle img{
+    border: 1px solid black;
+    height:110px;
+    width: 110px;
+    border-radius: 55px;
+    margin-left: 45%;
+}
+.left-box{
+    height:110px;
+    width: 110px;
+    border: 1px solid black;
+    margin-top: -110px;
+}
+.right-box{
+    height:110px;
+    width: 110px;
+    border: 1px solid black;
+    float: right;
+    margin-top: -110px;
+}
+#board1{
+    text-align: center;
+    margin-top: 0.3%;
+    margin-left: 1%;
+    color: blue;
+}
+.name-box{
+    height: 30%;
+    width: 100%;
+    border: 1px solid black;
+}
+#information{
+    margin-top: 1.5%;
+    margin-left: 1%;
+    text-align: center;
+}
+.mark-list{
+    height: 40%;
+    width: 50%;
+/*    border: 1px solid black;*/
+    margin-top: 2%;
+}
+.grade-box{
+    height: 40%;
+    width: 49%;
+    border: 1px solid black;
+    margin-top: -34.4%;
+    float: right;
+}
+
+
+.heading{
+    background: darkblue;
+    color: white;
+}
+.mid-little-box{
+    border: 1px solid black;
+    height: 60px;
+    width: 110px;
+    margin-left: 43%;
+    margin-top: -1%;
+}
+.right-little-box img{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-right: 2%;
+    margin-top:-10%;
+}
+.left-little-box img{
+    border: 1px solid black;
+    width: 180px;
+    height: 90px;
+    margin-left: 2%;
+    margin-top:-10%;
+}
+.mid-big-box{
+    border: 1px solid black;
+    width: 350px;
+    height: 150px;
+    margin-left: 30%;
+}
+.internal{
+    margin-top:-8px;
+}
+.sign1 img{
+    border: 1px solid black;
+    height: 15%;
+    widows:20%;
+    float: right;
+    margin-top:-2%;
+    margin-right: 2%;
+    background-color: white;
+}
+.sign2 img{
+    border: 1px solid black;
+    height: 15%;
+    width: 20%;
+    margin-top: -2%;
+    margin-left: 2%;
+}
+
