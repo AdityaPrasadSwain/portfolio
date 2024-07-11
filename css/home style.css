@@ -25,25 +25,63 @@
     margin-left:700px;
     
 }
-.normal{
-    text-align:center;
-    background-color: darkblue;
-    font-weight: bold;
-    margin-left:20px;
-    border:none;
-    color:white;
-    background-color:transparent;
-    border: 1px solid white;
-    height: 30px;
-    width: 90px;
-    border-radius: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+.normal {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    width: 8em;
+    height: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #f15bb5, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    margin-left: 1rem;
+  }
+  
+  .normal:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .normal:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
     
-}
-.normal:hover{
-    background-color: aqua;
-    transform: scale(1.2);
-}
+  }
+  
+  .normal:hover::before {
+    filter: blur(20px);
+  }
+  
+  .normal:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+  
 .lower-right-circle img{
     height:500px;
     width:500px;
@@ -164,21 +202,70 @@
     width: 5%;
      margin-top: -17%;
 }
-.my-web{
+ #my-web{
     height: 20%;
     width: 55%;
     margin-left: 20%;
     margin-top: 2%;
-    border-radius: 90px;
-    border: 1px solid orange;
-    background-color: rgba(102, 255, 204,0.5);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-.my-web:hover{
-    background-color: rgb(255, 102, 153);
-    transform: scale(1.1);
-}
+ }
+    
+    
+ 
 
+
+/* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
+
+.codepen-button {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+  }
+  
+  .codepen-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 25% 100%;
+    animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+    animation-play-state: paused;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out;
+  }
+  
+  .codepen-button:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+  }
+  
+  @keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+    to {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .codepen-button span {
+    position: relative;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    background: #000;
+    border-radius: 3px;
+    height: 100%;
+  }
 
 
 
